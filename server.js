@@ -24,7 +24,7 @@ function createTemplate(data)
             Tammana | article-one
         </title>
         <style>
-       
+        <link href="/ui/style.css" rel="stylesheet" />
             
         </style>
     </head>
