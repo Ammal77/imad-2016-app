@@ -4,7 +4,16 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-
+var info1={
+    name:`Tammana`,
+    education:`info2`
+};
+function createTemplate(data)
+{
+  var name=data.name;
+  var branch=data.branch;
+  var flims=data.flim;
+}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
