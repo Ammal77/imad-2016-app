@@ -6,13 +6,52 @@ var app = express();
 app.use(morgan('combined'));
 var info1={
     name:`Tammana`,
-    education:`info2`
+    age:26,
+    flim:`<ol>
+    <li>BAHUBALI
+    <li>HAPPY DAYS
+    <li>etc.,`
 };
 function createTemplate(data)
 {
   var name=data.name;
-  var branch=data.branch;
+  var age=data.age;
   var flims=data.flim;
+  var htmlTemplate=`
+  <html>
+    <head>
+        <title>
+            Tammana | article-one
+        </title>
+        <style>
+       
+            
+        </style>
+    </head>
+    <body>
+        <a href='/'>home</a>
+        <div>
+        <div class="sos">
+        <img src="https://4.bp.blogspot.com/-WLu_BDJ7VFU/V39bigmGQzI/AAAAAAAADho/H9MsqCOSV2gTItxdftFb6hod7ADFloLXQCLcB/s1600/mini-tamanna+hot+%285%29.jpg">
+        <h3>
+        $(name)
+        </h3>
+        </div>
+        <div class='tammana'>
+        <h2>
+        Details
+        </h2>
+        <p>
+        age::$(age)
+        <br>
+        flims::$(flims)
+        </div>
+        </div>
+    </body>
+
+</html>
+
+  
 }
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
