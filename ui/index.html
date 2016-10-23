@@ -1,19 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-<div>
-    <a href="http://www.google.com">HOME</a>
-    <br>
-    <div id="sans">
-    <img src="ui/sastra.jpg">
-    <br>
-    <a href="http://www.sastra.edu">SASTRA UNIVERSITY</a>
-    </div>
-</div>
-        <script type="text/javascript" src="/ui/main.js">
-        </script>
-    </body>
+<head>
+<meta charset="UTF-8">
+<title>
+booking form
+</title>
+</head>
+<body>
+<h1>SANTOSH HOTELS</h1>
+<form action="" method="GET">
+<fieldset>
+<legend>
+USER DETAILS
+</legend>
+<label for="username" >username :</label>
+<input type="text" name="username" id="username" required autofocus placeholder="UserName" pattern="[a-zA-Z]{5,}" title="enter atleast 5 characters"><br>
+<label for="email">    Email     :</label><input type="text" id="email" required placeholder="Email" pattern="[a-zA-Z0-9]{5,}@[a-zA-Z]{3,}.{1}[a-zA-Z]{3,}" title="Enter a valid Email ID">
+<br>
+<label for="phone">MobileNumber:</label><input type="tel" id="phone" required placeholder="mobilenumber" pattern="[0-9]{10}" title="enter your mobilenumber">
+<label for="state">Select State</label><select id="state" name="area" required>
+<option value=" "> </option>
+<option value="ANDHRA PRADESH">ANDHRA PRADESH</option>
+<option value="KARNATAKA">KARNATAKA</option>
+<option value="KERALA">KERALA</option>
+<option value="TAMIL NADU">TAMIL NADU</option>
+<option value="TELANGANA">TELANGANA</option>
+</select>
+<br>
+</fieldset>
+<br>
+<fieldset>
+<legend>BOOKING DETAILS</legend>
+<label for="date">Select BookingDate</label><input type="date" id="date" name="date" min="2016-10-24">
+<label for="ppl">No.of ppl Staying</label><input type="number" id="ppl" name="numberofGuests" min="1" max="6">
+<br>
+<b>Type of dishes REQUIRED</b>
+<input type="radio" name="NorthIndian" value="YesNorth">NorthIndian Dishes
+<input type="radio" name="NorthIndian" value="NoNorth">SouthIndian Dishes
+<p> Please select your order </p>
+<input type="checkbox" name="Breakfast" >Breakfast<br>
+<input type="checkbox" name="Lunch" >Lunch<br>
+<input type="checkbox" name="Snacks" >Snacks<br>
+<input type="checkbox" name="Dinner" >Dinner<br>
+</fieldset>
+<input type="Submit" name="sumbit">
+</form>
+</body>
 </html>
