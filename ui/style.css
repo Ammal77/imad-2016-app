@@ -50,6 +50,6 @@ h1
     padding:8px 13px;
     display:inline-block;
     text-shadow:0 2px 2px white;
-    border:3px;
+    border-bottom:3px green;
     
 }
