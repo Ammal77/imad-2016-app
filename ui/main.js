@@ -1,5 +1,5 @@
 
-var ele=document.getElemenyById('img');
+var ele=document. getElementById('img');
 function moveRight(){
  marginLeft =marginLeft + 10;
  ele.style.marginLeft = marginLeft + 'px';
