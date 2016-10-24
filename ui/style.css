@@ -45,9 +45,10 @@ h1
             } 
 .s
 {
-    background : yellow;
+    background : green;
     color:#fff;
     padding:8px 13px;
     display:inline-block;
+    text-shadow:0 2px 2px white;
     
 }
