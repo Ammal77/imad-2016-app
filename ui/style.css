@@ -43,3 +43,11 @@ h1
                 padding-left:30px;
                 padding-right:30px;
             } 
+.s
+{
+    background : yellow;
+    color:#fff;
+    padding:8px 13px;
+    display:inline-block;
+    
+}
