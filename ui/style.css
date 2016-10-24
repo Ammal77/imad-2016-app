@@ -7,6 +7,12 @@ h1
 {
     text-align: center;
 }
+#img
+{
+    height:400px;
+    width:400px;
+    
+}
 .center {
     text-align: center;
 }
